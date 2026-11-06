@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CKR Colchões | Loja de colchões em Fortaleza</title>
+<meta name="description" content="Colchões, bases, travesseiros e acessórios com ótimos preços. Av. Gomes de Matos, 148 – Montese, Fortaleza. WhatsApp (85) 98743-1390.">
+<meta name="theme-color" content="#0a1a3a">
+<style>
+:root{--navy:#0a1a3a;--blue:#1f4fd8;--sky:#e8effa;--gold:#f5b301;--txt:#1b2540;--r:22px}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--txt);background:#f6f8fc;line-height:1.5}
+a{color:inherit;text-decoration:none}
+button{font:inherit;cursor:pointer;border:0}
+.top{background:var(--navy);color:#fff;text-align:center;font-size:.85rem;padding:8px 12px}
+.top a{color:var(--gold);font-weight:700}
+header{position:sticky;top:0;z-index:20;background:#fff;box-shadow:0 2px 14px #0a1a3a14}
+.nav{max-width:1180px;margin:auto;display:flex;align-items:center;gap:18px;padding:12px 18px}
+.logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:1.15rem;color:var(--navy)}
+.logo i{width:42px;height:42px;border-radius:14px;background:linear-gradient(135deg,var(--blue),var(--navy));color:#fff;display:grid;place-items:center;font-style:normal}
+.logo small{display:block;font-weight:500;font-size:.7rem;color:#6b7799}
+nav{margin-left:auto;display:flex;gap:18px;font-weight:600;font-size:.95rem}
+.btn{display:inline-block;padding:12px 22px;border-radius:999px;font-weight:700;background:var(--blue);color:#fff;transition:.2s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 8px 18px #1f4fd844}
+.btn.zap{background:#18b655}.btn.out{background:transparent;border:2px solid #fff}
+.cartbtn{background:var(--navy);color:#fff;border-radius:999px;padding:10px 16px;font-weight:700}
+.cartbtn b{background:var(--gold);color:var(--navy);border-radius:999px;padding:1px 8px;margin-left:6px}
+.hero{background:linear-gradient(120deg,var(--navy),#16346e);color:#fff}
+.hero .in{max-width:1180px;margin:auto;padding:54px 18px;display:grid;grid-template-columns:1.1fr .9fr;gap:34px;align-items:center}
+.hero h1{font-size:clamp(2rem,5vw,3.4rem);line-height:1.1}.hero h1 em{color:var(--gold);font-style:normal}
+.hero p{margin:16px 0 24px;color:#cdd8f0;font-size:1.08rem}
+.hero .bt{display:flex;gap:12px;flex-wrap:wrap}
+.hero .pic{background:linear-gradient(145deg,#e8effa,#cfdcf5);border-radius:34px;padding:18px;box-shadow:0 20px 50px #0006}
+.hero .pic img{width:100%;border-radius:24px;mix-blend-mode:multiply;display:block}
+.vant{max-width:1180px;margin:-26px auto 0;padding:0 18px;display:grid;grid-template-columns:repeat(4,1fr);gap:14px;position:relative}
+.vant div{background:#fff;border-radius:var(--r);padding:18px;box-shadow:0 8px 24px #0a1a3a14}
+.vant b{display:block;color:var(--blue)}.vant span{font-size:.88rem;color:#5c6785}
+section{max-width:1180px;margin:auto;padding:54px 18px 10px}
+h2{font-size:2rem;color:var(--navy)}.sub{color:#5c6785;margin:6px 0 20px}
+.tools{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-bottom:22px}
+.chip{padding:9px 18px;border-radius:999px;background:#fff;border:2px solid #dbe4f5;font-weight:600;color:var(--navy)}
+.chip.on{background:var(--navy);border-color:var(--navy);color:#fff}
+.tools input{margin-left:auto;padding:10px 16px;border-radius:999px;border:2px solid #dbe4f5;min-width:210px;font:inherit}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:20px}
+.card{background:#fff;border-radius:26px;padding:12px 12px 16px;box-shadow:0 8px 24px #0a1a3a12;display:flex;flex-direction:column;transition:.2s}
+.card:hover{transform:translateY(-4px);box-shadow:0 14px 32px #0a1a3a22}
+.ph{border-radius:20px;background:linear-gradient(145deg,#eef3fc,#d3e0f6);aspect-ratio:4/3;display:grid;place-items:center;overflow:hidden;cursor:zoom-in;position:relative}
+.ph img{width:100%;height:100%;object-fit:contain;padding:8px;mix-blend-mode:multiply}
+.ph.sem{cursor:default;font-size:3.4rem}
+.tag{position:absolute;top:10px;left:10px;background:var(--gold);color:var(--navy);font-size:.72rem;font-weight:800;padding:3px 10px;border-radius:999px}
+.th{display:flex;gap:8px;margin:10px 0 4px;min-height:46px}
+.th img{width:58px;height:46px;object-fit:contain;border-radius:12px;background:linear-gradient(145deg,#eef3fc,#d3e0f6);border:2px solid transparent;cursor:pointer;padding:2px;mix-blend-mode:normal}
+.th img.on{border-color:var(--blue)}
+.card h3{font-size:1.05rem;color:var(--navy);margin:6px 4px 2px}
+.card p{font-size:.86rem;color:#5c6785;margin:0 4px 8px;flex:1}
+.card select{margin:0 4px 10px;padding:9px 12px;border-radius:14px;border:2px solid #dbe4f5;font:inherit;background:#fff}
+.pr{margin:0 4px 10px}.pr b{font-size:1.4rem;color:var(--navy)}.pr small{display:block;color:#5c6785}
+.est{font-size:.78rem;color:#d4572a;font-weight:700}
+.card .btn{margin:0 4px;text-align:center;padding:11px}
+.loja{display:grid;grid-template-columns:1fr 1.2fr;gap:26px;align-items:stretch}
+.info{background:#fff;border-radius:var(--r);padding:26px;box-shadow:0 8px 24px #0a1a3a12}
+.info li{list-style:none;margin:0 0 14px}.info li b{display:block;color:var(--blue)}
+.mapa{border:0;width:100%;min-height:340px;border-radius:var(--r)}
+footer{background:var(--navy);color:#b9c6e6;text-align:center;padding:30px 18px;margin-top:54px;font-size:.9rem}
+.fab{position:fixed;right:18px;bottom:18px;width:58px;height:58px;border-radius:50%;background:#18b655;color:#fff;display:grid;place-items:center;font-size:1.7rem;box-shadow:0 8px 20px #0005;z-index:25}
+.ov{position:fixed;inset:0;background:#050d22e6;z-index:50;display:none;align-items:center;justify-content:center;padding:18px}
+.ov.on{display:flex}
+.gal{max-width:820px;width:100%;text-align:center;color:#fff}
+.gal .big{background:linear-gradient(145deg,#eef3fc,#cfdcf5);border-radius:30px;padding:16px;position:relative}
+.gal .big img{width:100%;max-height:62vh;object-fit:contain;border-radius:22px;mix-blend-mode:multiply}
+.gal .tt{margin:12px 0 8px;font-weight:700}
+.gal .ths{display:flex;gap:10px;justify-content:center}
+.gal .ths img{width:84px;height:64px;object-fit:contain;border-radius:14px;background:#e8effa;border:3px solid transparent;cursor:pointer;padding:3px}
+.gal .ths img.on{border-color:var(--gold)}
+.x{position:absolute;top:10px;right:12px;background:var(--navy);color:#fff;width:38px;height:38px;border-radius:50%;font-size:1.2rem}
+.sb{position:absolute;top:50%;transform:translateY(-50%);background:#fff;color:var(--navy);width:42px;height:42px;border-radius:50%;font-size:1.3rem;box-shadow:0 4px 12px #0003}
+.sb.l{left:10px}.sb.r{right:10px}
+.dr{position:fixed;top:0;right:0;height:100%;width:min(400px,100%);background:#fff;z-index:60;transform:translateX(105%);transition:.3s;display:flex;flex-direction:column;border-radius:26px 0 0 26px}
+.dr.on{transform:none}
+.dr h3{padding:20px;color:var(--navy);display:flex;justify-content:space-between}
+.dr .it{flex:1;overflow:auto;padding:0 20px}
+.li{display:flex;gap:10px;align-items:center;padding:10px 0;border-bottom:1px solid #e6ecf7;font-size:.9rem}
+.li span{flex:1}.li button{background:#e8effa;border-radius:10px;width:28px;height:28px;font-weight:700}
+.dr .ft{padding:20px;border-top:1px solid #e6ecf7}
+.dr .tot{display:flex;justify-content:space-between;font-weight:800;font-size:1.2rem;margin-bottom:12px}
+@media(max-width:820px){.hero .in,.loja{grid-template-columns:1fr}.vant{grid-template-columns:1fr 1fr}nav{display:none}.cartbtn{margin-left:auto}.tools input{margin-left:0;width:100%}}
+</style>
+</head>
+<body>
+<div class="top">🚚 Entrega em Fortaleza · Parcele em até 10x · <a href="tel:+5585987431390">(85) 98743-1390</a></div>
+<header><div class="nav">
+<a class="logo" href="#"><i>CK</i><span>CKR Colchões<small>Fortaleza · CE</small></span></a>
+<nav><a href="#catalogo">Catálogo</a><a href="#vantagens">Vantagens</a><a href="#loja">Nossa loja</a></nav>
+<button class="cartbtn" onclick="drawer(1)">🛒 Pedido<b id="cn">0</b></button>
+</div></header>
+
+<div class="hero"><div class="in">
+<div><h1>Durma melhor <em>todas</em> as noites.</h1>
+<p>Colchões de molas ensacadas, espuma, bases, travesseiros e acessórios com preço justo e atendimento direto pelo WhatsApp.</p>
+<div class="bt"><a class="btn" href="#catalogo">Ver catálogo</a><a class="btn zap" href="https://wa.me/5585987431390?text=Ol%C3%A1%2C%20CKR%20Colch%C3%B5es!%20Quero%20ajuda%20para%20escolher%20meu%20colch%C3%A3o." target="_blank">Falar com consultor</a></div></div>
+<div class="pic"><img src="img/new-freedom-1.jpg" alt="Colchão New Freedom"></div>
+</div></div>
+
+<div class="vant" id="vantagens">
+<div><b>Entrega em Fortaleza</b><span>Rápida e com cuidado.</span></div>
+<div><b>Até 10x no cartão</b><span>Ou Pix e dinheiro.</span></div>
+<div><b>Garantia de fábrica</b><span>Produtos Ortobom.</span></div>
+<div><b>Atendimento humano</b><span>Compre pelo WhatsApp.</span></div>
+</div>
+
+<section id="catalogo">
+<h2>Encontre o seu colchão ideal</h2>
+<p class="sub">Escolha o tamanho, adicione ao pedido e finalize pelo WhatsApp. Clique na foto para ampliar.</p>
+<div class="tools" id="chips"></div>
+<div class="grid" id="grid"></div>
+</section>
+
+<section id="loja">
+<h2>Venha deitar e testar antes de comprar</h2>
+<p class="sub">Nossa loja no Montese tem modelos expostos para você experimentar com calma.</p>
+<div class="loja">
+<ul class="info">
+<li><b>Endereço</b><a href="https://www.google.com/maps/search/?api=1&query=Avenida%20Gomes%20de%20Matos%2C%20148%2C%20Montese%2C%20Fortaleza%20-%20CE" target="_blank">Av. Gomes de Matos, 148 – Montese, Fortaleza - CE</a></li>
+<li><b>Telefone e WhatsApp</b><a href="tel:+5585987431390">(85) 98743-1390</a></li>
+<li><b>Horário</b>Segunda a Sexta: 8h às 18h<br>Sábado: 8h às 14h</li>
+<li><a class="btn zap" href="https://wa.me/5585987431390" target="_blank">Chamar no WhatsApp</a></li>
+</ul>
+<iframe class="mapa" loading="lazy" src="https://www.google.com/maps?q=Avenida%20Gomes%20de%20Matos%2C%20148%2C%20Montese%2C%20Fortaleza%20-%20CE&output=embed"></iframe>
+</div>
+</section>
+
+<footer><b>CKR Colchões</b> · Av. Gomes de Matos, 148 – Montese, Fortaleza - CE · (85) 98743-1390<br>© 2026 CKR Colchões. Preços sujeitos a alteração. Consulte disponibilidade.</footer>
+<a class="fab" href="https://wa.me/5585987431390" target="_blank" aria-label="WhatsApp">💬</a>
+
+<div class="ov" id="ov" onclick="if(event.target==this)fechar()">
+<div class="gal"><div class="big"><button class="x" onclick="fechar()">✕</button><button class="sb l" onclick="nav(-1)">‹</button><img id="gi" alt=""><button class="sb r" onclick="nav(1)">›</button></div>
+<div class="tt" id="gt"></div><div class="ths" id="gth"></div></div>
+</div>
+
+<div class="dr" id="dr"><h3>Seu pedido <button onclick="drawer(0)" style="background:none;font-size:1.3rem">✕</button></h3>
+<div class="it" id="items"></div>
+<div class="ft"><div class="tot"><span>Total</span><span id="tot">R$ 0,00</span></div><button class="btn zap" style="width:100%" onclick="enviar()">Finalizar no WhatsApp</button></div></div>
+
+<script>
+const WA='5585987431390';
+const R=v=>v.toLocaleString('pt-BR',{style:'currency',currency:'BRL'});
+// [nome, categoria, descrição, [fotos], [[tamanho, preço, estoque], ...], emoji se não houver foto]
+const P=[
+['Airtech Spring Pocket','Colchões','Molas ensacadas individuais para mais conforto e menos vibração.',['airtech-spring-1','airtech-spring-2'],[['Solteiro 88x188x25',1156.74,2],['Casal 138x188x25',1615.61,2]]],
+['New Freedom','Colchões','Molas superpocket e pillow top viscoelástico. Sistema No Turn.',['new-freedom-1'],[['Casal 138x188x32',2557.54,1]]],
+['Iso Super Pocket','Colchões','Molas superpocket ensacadas com acabamento premium.',['iso-pocket-1','iso-pocket-2'],[['Casal 138x188x25',1472.63,1]]],
+['Fit Spring','Colchões','Molas Bonnel com ótima sustentação e durabilidade.',['fit-spring-1'],[['Solteiro 88x188x26',1233.13,1],['Casal 138x188x26',1755.25,1]]],
+['Physical Nanolastic Ortopillow','Colchões','Pillow top ortopédico para noites mais confortáveis.',['physical-nano-1','physical-nano-2'],[['Solteiro 88x188x23',1021.26,2],['Solteirão 108x198x23',1269.56,1],['Casal 138x188x23',1532.4,2]]],
+['Airtech 150','Colchões','Espuma de alta resiliência, firme e resistente.',['airtech150-1','airtech150-2'],[['Solteiro 88x188x18',838.37,1],['Casal 138x188x18',1252.46,2]]],
+['Airtech 100','Colchões','Ótimo custo-benefício para o dia a dia.',['airtech100-1','airtech100-2'],[['Solteiro 88x188x18',755.58,3],['Casal 138x188x18',1083.03,3]]],
+['Physical Ultra Resistente','Colchões','Espuma firme para quem precisa de mais apoio.',['ultra-1','ultra-2'],[['Solteiro 88x188x17',799.3,2],['Solteiro 88x188x20',916.9,1],['Casal 138x188x17',1247.43,3]]],
+['Physical Resistente Liso','Colchões','Espuma firme, prático e econômico.',['liso-1','liso-2'],[['Solteiro 88x188x12',510.12,1],['Casal 138x188x12',898.86,2]]],
+['Fit 33','Colchões','Espuma D33 com bordado em matelassê.',['fit33-1'],[['Solteiro 88x188x17',838.63,2]]],
+['Light D28','Colchões','Espuma D28, leve e econômico.',['light-1'],[['Solteiro 88x188x14',732.25,2]]],
+['Light D33','Colchões','Espuma D33 com mais sustentação.',['light-1'],[['Solteiro 88x188x17',883.13,1],['Casal 138x188x17',1341.86,2]]],
+['Soft Bordado','Colchões','Colchão bordado, ideal para uso diário.',['soft-1'],[['Solteiro 88x188x12',325.8,5]]],
+['Colchão Auxiliar Cori Nero','Colchões','Ideal para otimizar o espaço do quarto.',['auxiliar-1','auxiliar-2'],[['79x171x11',592.16,1]]],
+['Base Sommier Pop','Bases e cabeceiras','Base box resistente com estrutura de madeira tratada.',['base-pop-1','base-pop-2'],[['Solteiro 88x188x23',382.04,7],['Casal 138x188x23',528.28,7]]],
+['Base Baú Physical Preta','Bases e cabeceiras','Base com baú para guardar roupas e objetos.',['base-bau-1','base-bau-2'],[['Solteiro 88x188x25',1199.19,1]]],
+['Base Corino','Bases e cabeceiras','Base sommier em corino com acabamento elegante.',['base-corino-1','base-corino-2'],[['Preta vazada 88x188x25',564.57,1],['Cinza 108x198x23',577.3,1]]],
+['Cabeceira Piave Veludo Bege','Bases e cabeceiras','Acabamento em veludo que valoriza o quarto.',['cabeceira-1','cabeceira-2'],[['160x120x8',584.1,1]]],
+['Travesseiro Conforto Anatômico','Travesseiros','Formato anatômico que apoia pescoço e coluna.',['trav-anatomico-1'],[['Único',156.36,4]]],
+['Travesseiro Nuvem','Travesseiros','Macio e leve.',[],[['60x40x12',98.69,6]],'☁️'],
+['Travesseiro Viscoelástico','Travesseiros','Molda-se ao formato da cabeça.',[],[['40x40x60',174.89,2]],'🛏️'],
+['Travesseiro Flocos','Travesseiros','Enchimento em flocos, macio e econômico.',[],[['60x40',23.52,10]],'🛏️'],
+['Ortobom Freedom P520','Travesseiros','Linha Ortobom.',[],[['Único',337.82,1]],'🛏️'],
+['Ortobom Highfoam 170','Travesseiros','Linha Ortobom.',[],[['Único',343.77,1]],'🛏️'],
+['Ortobom Light Ortopédico 170','Travesseiros','Linha Ortobom.',[],[['Único',148.95,1]],'🛏️'],
+['Ortobom Pro Vida Superpocket P520','Travesseiros','Linha Ortobom.',[],[['Único',251.43,1]],'🛏️'],
+['Encosto Relax Premium Zeflex','Acessórios','Encosto para ler ou assistir TV com conforto.',['encosto-1'],[['40x40x60',157.58,4]]],
+['Suavencosto Sleep','Acessórios','Apoio de espuma para recostar com conforto.',[],[['40x40x55',131.03,5]],'🛋️'],
+['Rolo Camurça Cinza','Acessórios','Rolo decorativo em camurça.',['rolo-1'],[['135x20x20',96.69,1]]],
+['Colchonete para Academia','Acessórios','Revestimento que não retém líquidos.',['colchonete-1'],[['40x90x4',89.26,1]]],
+['Mochila Camping','Acessórios','Prática e leve para transporte.',[],[['40x175x55',129.12,2]],'🎒'],
+['Protetor de Colchão','Acessórios','Protege seu colchão do dia a dia.',[],[['Solteiro 90x190',101.77,3],['Casal 140x190',128.7,5],['Queen 160x200',138.63,1]],'🛡️']
+];
+const cats=['Todos',...new Set(P.map(p=>p[1]))];
+let cat='Todos',q='',cart=[],g={p:0,i:0};
+const ph=(p)=>p[3].length?`<img src="img/${p[3][0]}.jpg" alt="${p[0]}">`:p[5];
+function lista(){
+ chips.innerHTML=cats.map(c=>`<button class="chip ${c==cat?'on':''}" onclick="cat='${c}';lista()">${c}</button>`).join('')+'<input placeholder="Buscar produto..." oninput="q=this.value.toLowerCase();grade()" value="'+q+'">';
+ grade();
+}
+function grade(){
+ grid.innerHTML=P.map((p,i)=>[p,i]).filter(([p])=>(cat=='Todos'||p[1]==cat)&&p[0].toLowerCase().includes(q)).map(([p,i])=>`
+ <div class="card"><div class="ph ${p[3].length?'':'sem'}" id="m${i}" ${p[3].length?`onclick="abrir(${i},0)"`:''}>${ph(p)}${p[4].some(v=>v[2]<=2)?'<span class="tag">Últimas unidades</span>':''}</div>
+ <div class="th">${p[3].map((f,k)=>`<img src="img/${f}.jpg" class="${k?'':'on'}" onclick="mini(${i},${k},this)" alt="">`).join('')}</div>
+ <h3>${p[0]}</h3><p>${p[2]}</p>
+ <select id="s${i}" onchange="preco(${i})">${p[4].map((v,k)=>`<option value="${k}">${v[0]}</option>`).join('')}</select>
+ <div class="pr"><b id="p${i}"></b><small id="x${i}"></small></div>
+ <button class="btn" onclick="add(${i})">Adicionar ao pedido</button></div>`).join('')||'<p>Nenhum produto encontrado.</p>';
+ P.forEach((_,i)=>document.getElementById('s'+i)&&preco(i));
+}
+function preco(i){const v=P[i][4][document.getElementById('s'+i).value];
+ document.getElementById('p'+i).textContent=R(v[1]);
+ document.getElementById('x'+i).textContent='ou 10x de '+R(v[1]/10);}
+function mini(i,k,el){document.querySelector('#m'+i+' img').src='img/'+P[i][3][k]+'.jpg';
+ document.querySelector('#m'+i).onclick=()=>abrir(i,k);
+ el.parentNode.querySelectorAll('img').forEach(x=>x.classList.remove('on'));el.classList.add('on');}
+function abrir(i,k){g={p:i,i:k};ov.classList.add('on');galeria();}
+function galeria(){const p=P[g.p];gi.src='img/'+p[3][g.i]+'.jpg';gt.textContent=p[0];
+ gth.innerHTML=p[3].map((f,k)=>`<img src="img/${f}.jpg" class="${k==g.i?'on':''}" onclick="g.i=${k};galeria()">`).join('');}
+function nav(d){const n=P[g.p][3].length;g.i=(g.i+d+n)%n;galeria();}
+function fechar(){ov.classList.remove('on');}
+document.addEventListener('keydown',e=>{if(e.key=='Escape'){fechar();drawer(0)}if(ov.classList.contains('on')){if(e.key=='ArrowRight')nav(1);if(e.key=='ArrowLeft')nav(-1)}});
+function add(i){const k=+document.getElementById('s'+i).value,id=i+'-'+k,f=cart.find(c=>c.id==id);
+ f?f.q++:cart.push({id,i,k,q:1});atual();drawer(1);}
+function atual(){cn.textContent=cart.reduce((s,c)=>s+c.q,0);
+ items.innerHTML=cart.length?cart.map(c=>{const p=P[c.i],v=p[4][c.k];return`<div class="li"><span><b>${p[0]}</b><br>${v[0]} · ${R(v[1])}</span><button onclick="qt('${c.id}',-1)">−</button>${c.q}<button onclick="qt('${c.id}',1)">+</button></div>`}).join(''):'<p style="padding:10px 0;color:#5c6785">Seu pedido está vazio.</p>';
+ tot.textContent=R(cart.reduce((s,c)=>s+c.q*P[c.i][4][c.k][1],0));}
+function qt(id,d){const c=cart.find(x=>x.id==id);c.q+=d;if(c.q<1)cart=cart.filter(x=>x!=c);atual();}
+function drawer(o){dr.classList.toggle('on',!!o);}
+function enviar(){if(!cart.length)return;
+ const l=cart.map(c=>{const p=P[c.i],v=p[4][c.k];return`• ${c.q}x ${p[0]} (${v[0]}) - ${R(v[1])}`}).join('\n');
+ window.open(`https://wa.me/${WA}?text=`+encodeURIComponent(`Olá, CKR Colchões! Quero fazer este pedido:\n${l}\n\nTotal: ${tot.textContent}`),'_blank');}
+lista();atual();
+</script>
+</body>
+</html>
